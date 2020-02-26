@@ -63,5 +63,5 @@ bse('imgs/qr-code.png', phi, darkeningLevel);
 fprintf("\nImage #2: @ Sign\n");
 bse('imgs/at-sign.png', phi, darkeningLevel);
 
-fprintf("\nImage #3: Photo of Mt. Fuji\n");
+fprintf("\nImage #3: Photography of the Mt. Fuji\n");
 bse('imgs/mt-fuji.jpg', phi);       % no darkening

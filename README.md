@@ -6,30 +6,30 @@ Examples of blind source extraction (BSE) of images based on Kolmogorov-Chaitin 
 
 The scenario is as follows:
 
-*A is the full rank mixing matrix, which is given by:
+*_A_ is the full rank mixing matrix, which is given by:
 
     A = [cos(\phi)  -sin(\phi)
          sin(\phi)   cos(\phi)],
 
-where \phi is the mixing angle.
+where _\phi_ is the mixing angle.
 
 *w is the extraction vector:
 
     w = [cos(\theta)  sin(\theta)]^T,
 
-in which T indicates the transpose operation and \theta is in the interval [0, \pi].
+in which _T_ indicates the transpose operation and \theta is in the interval [0, \pi].
 
 Before applying the mixing process, the images are converted to 1-D arrays. Then, we have:
 
     x = A*s,
 
-where x corresponds to the mixed images and s are the souces (one is the image of interest and the other is a noisy image). The extraction process is given by:
+where _x_ corresponds to the mixed images and _s_ are the souces (one is the image of interest and the other is a noisy image). The extraction process is given by:
 
     y = w*x,
 
-where y is the recovered image.
+where _y_ is the recovered image.
 
-The "darkening process" can be used conceal the image of interest in the noise. As the darkening level increases, it becomes harder to spot the original image in the noisy one.
+A "darkening process" can be used to conceal the image of interest in the noise. As the darkening level increases, it becomes harder to spot the original image in the mixtures.
 
 ## Examples
 
@@ -37,13 +37,13 @@ The "darkening process" can be used conceal the image of interest in the noise. 
 
 ![BSE of the QR code.](imgs/results/qr-code-results.png)
 
-**Figure 1** _Images of the QR code during the darkening, mixing, and extracting processes. The value of the complexity of the recovered image for each value of \theta is right below. Observes that as the darkening levels increase, the source image is concealed in the noise._
+**Figure 1** _Images of the QR code during the darkening, mixing, and extracting processes. The value of the complexity of the recovered image for each value of_ \theta _is right below. Observes that as the darkening levels increase, the source image is concealed in the noise._
 
 ### Example #2: @ sign
 
 ![BSE of the @ sign.](imgs/results/at-sign-results.png)
 
-**Figure 2** _Images of the @ sign during the darkening, mixing, and extracting processes, and the complexity as a function of \theta._
+**Figure 2** _Images of the @ sign during the darkening, mixing, and extracting processes, and the complexity as a function of_ \theta.
 
 ### Example #3: Photography of the Mt. Fuji
 
