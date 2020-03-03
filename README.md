@@ -1,4 +1,4 @@
-# Blind source extraction (BSE) of images based on complexity measure
+# Blind source extraction (BSE) of images based on a complexity measure
 
 Examples of blind source extraction (BSE) of images based on Kolmogorov-Chaitin complexity, which is estimated by means of lossless compression of data (in this case, the LZW compression of TIFF images). To perform the BSE, we assume that the mixtures are more complex (i.e., can be less compressed) than the source image. The contrast or score function, hereby named _complexity_, corresponds to the ratio of the file size of the compressed image to the file size of the same uncompressed image:
 
