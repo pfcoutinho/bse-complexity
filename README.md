@@ -33,7 +33,7 @@ _y_ is the recovered image.
 
 ## Darkening
 
-In these examples, we are dealing with grayscale images. Pixel value ranges from 0 to 1, 0 being totally black and 1 totally white. The "darkening process" decreases the value of each pixel in the image. This is an interesting process: as the image gets darker, it becomes harder to recognize the original image in the mix with noise.
+In these examples, we are dealing with grayscale and black & white images. For grayscale images, pixel value ranges from 0 to 1, 0 being totally black and 1 totally white. The "darkening process" decreases the value of each pixel in the image. This is an interesting process: as the image gets darker, it becomes harder to recognize the original image in the mix with noise.
 
 ## Examples
 
@@ -41,19 +41,19 @@ In these examples, we are dealing with grayscale images. Pixel value ranges from
 
 ![BSE of the QR code.](imgs/results/qr-code-results.png)
 
-**Figure 1: QR Code** The images show the darkening, mixing, and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
+**Figure 1: QR Code** _The images show the darkening, mixing, and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
 
 ### Example #2: @ Sign
 
 ![BSE of the @ Sign.](imgs/results/at-sign-results.png)
 
-**Figure 2: @ Sign** The images show the darkening, mixing, and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
+**Figure 2: @ Sign** _The images show the darkening, mixing, and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
 
 ### Example #3: Photography of the Mt. Fuji
 
 ![BSE of the photography of the Mt. Fuji.](imgs/results/mt-fuji-results.png)
 
-**Figure 3: Mt. Fuji** The images show the mixing and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
+**Figure 3: Mt. Fuji** _The images show the mixing and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
 
 ## References
 
