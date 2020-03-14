@@ -2,11 +2,11 @@
 
 Examples of blind source extraction (BSE) of images based on Kolmogorov-Chaitin complexity, which is estimated by means of lossless compression of data (in this case, the LZW compression of TIFF images).
 
-To perform the BSE, we assume that the mixtures are more complex (_i.e._, can be less compressed) than the source image. The contrast or score function, hereby named _complexity_, corresponds to the ratio of the file size of the compressed image to the file size of the same uncompressed image:
+To perform the BSE, we assume that the mixtures are more complex (_i.e._, can be less compressed) than the source image. The contrast or score function, which is named _kcc_, corresponds to the ratio of the file size of the compressed image to the file size of the same uncompressed image:
 
-                 file size of the compressed image
-    complexity = -----------------------------------
-                 file size of the uncompressed image
+          file size of the compressed image
+    kcc = -----------------------------------
+          file size of the uncompressed image
 
 ## Mixing and extraction
 
@@ -17,7 +17,7 @@ _A_ is a full rank mixing matrix:
 
 where _phi_ is the mixing angle. _w_ is the extraction vector:
 
-    w = [cos(\theta)  sin(\theta)]^T,
+    w = [cos(theta)  sin(theta)]^T,
 
 in which _T_ indicates the transpose operation and theta is in the interval [0, pi].
 
@@ -41,19 +41,19 @@ In these examples, we are dealing with grayscale images. Pixel value ranges from
 
 ![BSE of the QR code.](imgs/results/qr-code-results.png)
 
-**Figure 1 QR Code** The images show the darkening, mixing, and extraction process. On the right, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
+**Figure 1: QR Code** The images show the darkening, mixing, and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
 
 ### Example #2: @ Sign
 
 ![BSE of the @ Sign.](imgs/results/at-sign-results.png)
 
-**Figure 2 @ Sign** The images show the darkening, mixing, and extraction process. On the right, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
+**Figure 2: @ Sign** The images show the darkening, mixing, and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
 
 ### Example #3: Photography of the Mt. Fuji
 
 ![BSE of the photography of the Mt. Fuji.](imgs/results/mt-fuji-results.png)
 
-**Figure 3 Mt. Fuji** The images show the darkening, mixing, and extraction process. On the right, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
+**Figure 3: Mt. Fuji** The images show the mixing and extraction processes. Right below, the evolution of the complexity measure for values of_ theta _ranging from_ 0 _to_ pi _._
 
 ## References
 
